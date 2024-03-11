@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+
+    <meta http-equiv="refresh" content="60">
+
+
+</head>
+<body>
+<div>欢迎您用户：</div>
+<div th:text="${welcome}"></div>
+
+<div></div>
+<div></div>
+
+<div>猜你喜欢</div>
+
+<div class="shell-1">
+<img class="shell-2"
+    th:text="${rec1}"
+    th:src="@{'/images'+${image1}}" width="200px">
+</img>
+<img class="shell-2"
+     th:text="${rec2}"
+     th:src="@{'/images'+${image2}}" width="200px">
+</img>
+<img class="shell-2"
+    th:text="${rec3}"
+     th:src="@{'/images'+${image3}}"width="200px">
+
+</img>
+<img class="shell-2"
+     th:text="${rec4}"
+     th:src="@{'/images'+${image4}}" width="200px">
+
+</img>
+<img class="shell-2"
+     th:text="${rec5}"
+     th:src="@{'/images'+${image5}}" width="200px">
+
+</img>
+</div>
+
+
+<div>人气推荐</div>
+
+
+
+<div class="shell-1">
+<img class="shell-2"
+   th:text="${rec6}"
+    th:src="@{'/images'+${image6}}" width="200px">
+</img>
+<img class="shell-2"
+     th:text="${rec7}"
+     th:src="@{'/images'+${image7}}" width="200px">
+</img>
+<img class="shell-2"
+    th:text="${rec8}"
+    th:src="@{'/images'+${image8}}" width="200px">
+</img>
+<img class="shell-2"
+    th:text="${rec9}"
+    th:src="@{'/images'+${image9}}" width="200px">
+
+</img>
+<img class="shell-2"
+     th:text="${rec10}"
+     th:src="@{'/images'+${image10}}" width="200px">
+
+</img>
+
+</div>
+
+</body>
+</html>

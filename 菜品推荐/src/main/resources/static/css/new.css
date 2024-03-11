@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*清除标志*/
+li{
+    list-style: none;
+
+}
+
+/*清除下划线*/
+a{
+    text-decoration: none;
+
+
+}
+.tp{
+    height: 120px;
+    width: 1360px;
+}
+
+/*把li向左浮动，然后设置一个右边的外边距（就是空格）*/
+.ul li{
+
+    float: left;
+    padding-right: 15px;
+
+}
+.ul li a{
+    color: rgb(176,176,176);
+}
+.ul li a:hover{
+    color: white;
+}
+
+
+.phone-one{
+    height: 58px;
+    background-color: rgb(245,245,245);
+    overflow: hidden;
+}
+.phone-one h2{
+    float: left;
+    line-height: 58px;
+    font-size: 22px;
+    font-weight: 200;
+}
+.phone-one a{
+    display: block;
+    color: black;
+    float: right;
+    line-height: 58px;
+
+}
+.phone-one a:hover{
+    color: orangered;
+}
+
+.phone-two{
+    float: left;
+}
+
+.phone-three a img{
+    padding:  0 0 10px 9px;
+    float: right;
+}
+.phone{
+    overflow: hidden;
+    background-color: rgb(245,245,245);
+    width: 90%;
+    margin: 0 auto;
+}
+.phone-bottom{
+    margin-bottom: 9px;
+}

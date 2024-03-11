@@ -1,0 +1,21 @@
+1.crontab 进入
+
+crontab -e
+
+进入服务器后任何位置输入上面命令都可以进入，然后就可以当文件进行编辑
+
+2.服务启动与关闭
+
+运行 crontab -e，要么成功，要么就各种问题提示失败，原因就需要先看一下crontab的服务有没有启动
+
+service crond start //启动服务
+
+service crond stop //关闭服务
+
+service crond restart //重启服务
+
+service crond reload //重新载入配置
+
+service crond status //查看服务状态
+
+

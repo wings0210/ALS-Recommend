@@ -1,0 +1,51 @@
+
+强制关闭进程： kill -9  进程号
+
+启动hadoop
+	-->  start-all.sh
+                       
+                 web：
+
+	         192.168.88.128:50070
+	yarn :192.168.88.128:8088
+
+启动zookeeper
+	-->> zkServer.sh start
+
+启动hbase，先启动zookeeper
+	-->> start-hbase.sh                              ->>hbase shell                       上传至HBase的dfs文件系统：hdfs dfs -put /opt/data/input/food /input
+                                                                                                                                                               删除文件：hadoop fs -rm -f /input/food
+                                                                                     
+	192.168.88.128:16010                                退出：exit
+
+启动spark
+               -->start-spark-all.sh
+              
+web：          192.168.88.128:8080
+
+
+启动kafka
+               -->cd /opt/app/kafka_2.11-2.1.0/
+             
+               -->bin/kafka-server-start.sh config/server.properties
+
+
+启动flume
+
+               脚本启动flume,如：
+               -->cd /opt/app/apache-flume-1.9.0-bin/conf
+               -->nohup flume-ng agent -n pro -c ./ -f em3.conf >/dev/null 2>&1 & 
+              然后查看kafka接收信息：
+              -->cd /opt/app/kafka_2.11-2.1.0/bin
+              -->kafka-console-consumer.sh --bootstrap-server bogon:9092 --topic topic1 --from-beginning
+            
+             删除topic： 
+              cd /opt/app/kafka_2.11-2.1.0
+             ./bin/kafka-topics.sh --delete --topic topic1 --zookeeper bogon:2181/kafka
+             查看topic：
+              cd /opt/app/kafka_2.11-2.1.0
+             ./bin/kafka-topics.sh --list --zookeeper bogon:2181/kafka
+
+             查看所有group/consumer：
+              cd /opt/app/kafka_2.11-2.1.0
+              ./bin/kafka-consumer-groups.sh  --bootstrap-server bogon:9092 --list

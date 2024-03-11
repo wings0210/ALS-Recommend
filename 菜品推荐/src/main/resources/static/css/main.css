@@ -1,0 +1,13 @@
+.shell-1{
+    /*width: 600px;
+    height: 400px;
+    background-color: lightyellow;
+
+     */
+    display: flex;/*重要*/
+    justify-content: space-between;/*重要*/
+}
+.shell-1.shell-2{
+    width: 200px;
+    height: 150px;
+}
