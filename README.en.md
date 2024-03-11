@@ -6,12 +6,12 @@
 
 ## Software  Framework
 
-![](/home/autolabor/E_Disk/ALS-Recommend/food_recommend-master/业务逻辑实现.png)
+![](./framework.png)
 
 
 
 ## **Work Flow**
 
-![](/home/autolabor/E_Disk/ALS-Recommend/food_recommend-master/推荐流程图.png)
+![](./service.png)
 
 #### 
